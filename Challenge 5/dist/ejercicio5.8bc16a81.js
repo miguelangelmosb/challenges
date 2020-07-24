@@ -124,16 +124,25 @@ var calculadora = function calculadora() {
   var valor3 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   var texto = "Tu operacion es: ";
 
-  if (valor3 == 'suma') {
-    texto += "".concat(valor, " + ").concat(valor2, " = ").concat(valor + valor2);
-  } else if (valor3 == 'resta') {
-    texto += "".concat(valor, " - ").concat(valor2, " = ").concat(valor - valor2);
-  } else if (valor3 == 'multiplicacion') {
-    texto += "".concat(valor, " * ").concat(valor2, " = ").concat(valor * valor2);
-  } else if (valor > 0 && valor2 > 0 && valor3 == 'division') {
-    texto += "".concat(valor, " / ").concat(valor2, " = ").concat(valor / valor2);
-  } else {
-    texto = 'Los  valores ingresados no son correctos';
+  switch (valor3) {
+    case 'suma':
+      texto += "".concat(valor, " + ").concat(valor2, " = ").concat(valor + valor2);
+      break;
+
+    case 'resta':
+      texto += "".concat(valor, " - ").concat(valor2, " = ").concat(valor - valor2);
+      break;
+
+    case 'multiplicacion':
+      texto += "".concat(valor, " * ").concat(valor2, " = ").concat(valor * valor2);
+      break;
+
+    case 'division':
+      texto += "".concat(valor, " / ").concat(valor2, " = ").concat(valor / valor2);
+      break;
+
+    default:
+      texto = 'Los  valores ingresados no son correctos';
   }
 
   return texto;
@@ -144,7 +153,7 @@ valor2 = parseInt(prompt('Ingresa el segundo numero: '));
 valor3 = prompt('Ingresa la operacion que deseas ingresar (todo en minuscula): ');
 var respuesta = calculadora(valor, valor2, valor3);
 console.log(respuesta);
-},{}],"../../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -172,7 +181,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50473" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58061" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -348,5 +357,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/ejercicio5.js"], null)
+},{}]},{},["../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/ejercicio5.js"], null)
 //# sourceMappingURL=/ejercicio5.8bc16a81.js.map

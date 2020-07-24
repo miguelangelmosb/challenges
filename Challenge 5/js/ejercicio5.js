@@ -2,30 +2,23 @@ const calculadora = function (valor = 0, valor2 = 0, valor3 = '')
     {
         let texto = `Tu operacion es: `;
            
-        if(valor3 == 'suma')
-            {
-                texto += `${valor} + ${valor2} = ${valor + valor2}`;
-            }
+        switch(valor3)
+        {
+            case 'suma': texto += `${valor} + ${valor2} = ${valor + valor2}`;
+            break;
             
-        else if(valor3 == 'resta')
-            {
-                texto += `${valor} - ${valor2} = ${valor - valor2}`;
-            }
+            case 'resta': texto += `${valor} - ${valor2} = ${valor - valor2}`;
+            break;
             
-        else if(valor3 == 'multiplicacion')
-            {
-                texto += `${valor} * ${valor2} = ${valor * valor2}`;
-            }
-            
-        else if(valor > 0 && valor2 > 0 && valor3 == 'division')
-            {
-                texto += `${valor} / ${valor2} = ${valor / valor2}`;
-            }
-            
-        else 
-            {
-                texto = 'Los  valores ingresados no son correctos';
-            }   
+            case 'multiplicacion': texto += `${valor} * ${valor2} = ${valor * valor2}`;
+            break;
+
+            case 'division': texto += `${valor} / ${valor2} = ${valor / valor2}`;
+            break;
+
+            default: texto = 'Los  valores ingresados no son correctos'; 
+        }
+   
         return texto;
     }   
 
