@@ -123,13 +123,13 @@ var sumaFinal = 0;
 for (var i = 1; i <= 10; i++) {
   var numero = parseInt(prompt('Ingresa un numero: '));
   alert("Ingresaste el numero ".concat(numero));
-  console.log("Ingresaste el numero ".concat(numero));
   sumaFinal += numero;
+  console.log("".concat(numero, " + ").concat(sumaFinal, " = ").concat(sumaFinal, " "));
 }
 
 alert("La suma final de lo numeros ingresados son: ".concat(sumaFinal));
 console.log("La suma final de lo numeros ingresados son: ".concat(sumaFinal));
-},{}],"../../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -157,7 +157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50396" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59026" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -333,5 +333,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/ejercicio3.js"], null)
+},{}]},{},["../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/ejercicio3.js"], null)
 //# sourceMappingURL=/ejercicio3.9bed64d6.js.map
