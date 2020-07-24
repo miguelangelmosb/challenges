@@ -1,49 +1,36 @@
-    function diasM (dias= '')
+function diasM (dias= '')
+{
+    let resultado = '';
+
+    switch(dias)
     {
-        let resultado = '';
+        case 'lunes': resultado = 'Es lunes, empieza la semana con la mejor actitud.';
+        break;
 
-        if ( dias == 'lunes')
-        {
-            resultado = 'Es lunes, empieza la semana con la mejor actitud.';
-        }
+        case 'martes': resultado = 'Es martes, cada martes es una nueva oportunidad para conseguir un nuevo logro.';
+        break;
 
-        else if ( dias == 'martes')
-        {
-        resultado= 'Es martes, cada martes es una nueva oportunidad para conseguir un nuevo logro.';
-        }
+        case 'miercoles': resultado = 'Es miercoles, Miercoles empieza con "M" de Maravilloso, como todo lo que te espera hoy';
+        break;
 
-        else if ( dias == 'miercoles')
-        {
-        resultado= 'Es miercoles, Miercoles empieza con "M" de Maravilloso, como todo lo que te espera hoy';
-        }
+        case 'jueves': resultado= 'Hoy es jueves de recibir buenas noticias y alegrar el corazón.'; 
+        break;
 
-        else if ( dias == 'jueves')
-        {
-        resultado= 'Hoy es jueves de recibir buenas noticias y alegrar el corazón.';
-        }
+        case 'viernes': resultado= 'Celebra!! Todo porque hoy es VIERNES!!';
+        break;
+        
+        case 'sabado': resultado= 'Buenos dias, ¡El sabado ya esta aqui!';
+        break;
 
-        else if ( dias == 'viernes')
-        {
-        resultado= 'Celebra!! Todo porque hoy es VIERNES!!';
-        }
+        case 'domingo': resultado= 'Toma tu vida en tus propias manos y haz de este domingo un día grandioso.'; 
+        break;
 
-        else if ( dias == 'sabado')
-        {
-            resultado= 'Buenos dias, ¡El sabado ya esta aqui!';
-        }
-
-        else if ( dias == 'domingo')
-        {
-            resultado= 'Toma tu vida en tus propias manos y haz de este domingo un día grandioso.';
-        }
-
-        else
-        {
-            resultado = 'Datos incorrectos';
-        }
-
-        return resultado;
+        default: resultado = 'Datos incorrectos';
+        break;
     }
+
+    return resultado;
+}
 let dias = prompt('Digita un dia de la semana (todo en minuscula): ')
 const respuesta = diasM(dias)
 alert (respuesta)

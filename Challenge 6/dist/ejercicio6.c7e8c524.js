@@ -122,22 +122,38 @@ function diasM() {
   var dias = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
   var resultado = '';
 
-  if (dias == 'lunes') {
-    resultado = 'Es lunes, empieza la semana con la mejor actitud.';
-  } else if (dias == 'martes') {
-    resultado = 'Es martes, cada martes es una nueva oportunidad para conseguir un nuevo logro.';
-  } else if (dias == 'miercoles') {
-    resultado = 'Es miercoles, Miercoles empieza con "M" de Maravilloso, como todo lo que te espera hoy';
-  } else if (dias == 'jueves') {
-    resultado = 'Hoy es jueves de recibir buenas noticias y alegrar el corazón.';
-  } else if (dias == 'viernes') {
-    resultado = 'Celebra!! Todo porque hoy es VIERNES!!';
-  } else if (dias == 'sabado') {
-    resultado = 'Buenos dias, ¡El sabado ya esta aqui!';
-  } else if (dias == 'domingo') {
-    resultado = 'Toma tu vida en tus propias manos y haz de este domingo un día grandioso.';
-  } else {
-    resultado = 'Datos incorrectos';
+  switch (dias) {
+    case 'lunes':
+      resultado = 'Es lunes, empieza la semana con la mejor actitud.';
+      break;
+
+    case 'martes':
+      resultado = 'Es martes, cada martes es una nueva oportunidad para conseguir un nuevo logro.';
+      break;
+
+    case 'miercoles':
+      resultado = 'Es miercoles, Miercoles empieza con "M" de Maravilloso, como todo lo que te espera hoy';
+      break;
+
+    case 'jueves':
+      resultado = 'Hoy es jueves de recibir buenas noticias y alegrar el corazón.';
+      break;
+
+    case 'viernes':
+      resultado = 'Celebra!! Todo porque hoy es VIERNES!!';
+      break;
+
+    case 'sabado':
+      resultado = 'Buenos dias, ¡El sabado ya esta aqui!';
+      break;
+
+    case 'domingo':
+      resultado = 'Toma tu vida en tus propias manos y haz de este domingo un día grandioso.';
+      break;
+
+    default:
+      resultado = 'Datos incorrectos';
+      break;
   }
 
   return resultado;
@@ -146,7 +162,7 @@ function diasM() {
 var dias = prompt('Digita un dia de la semana (todo en minuscula): ');
 var respuesta = diasM(dias);
 alert(respuesta);
-},{}],"../../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -174,7 +190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50509" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58258" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -350,5 +366,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/ejercicio6.js"], null)
+},{}]},{},["../../../../AppData/Roaming/nvm/v14.5.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/ejercicio6.js"], null)
 //# sourceMappingURL=/ejercicio6.c7e8c524.js.map
