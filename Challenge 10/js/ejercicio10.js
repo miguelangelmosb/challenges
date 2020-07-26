@@ -107,40 +107,40 @@ switch (pregunta)
      case 'todo': console.log(`Coro:\n ${himno[0]}\n  I:\n ${himno[1]}\n II:\n ${himno[2]}\n III:\n ${himno[3]}\n IV:\n ${himno[4]}\n V:\n ${himno[5]}\n  VI:\n ${himno[6]}\n VII:\n ${himno[7]}\n VIII:\n ${himno[8]}\n IX:\n ${himno[9]}\n X:\n ${himno[10]}\n XI:\n ${himno[11]}`);
      break;
 
-    case 'coro' : console.log(himno[0]);
+    case 'coro' : console.log(`Coro:\n ${himno[0]}`);
     break;
 
-    case '1' : console.log(himno[1]);
+    case '1' : console.log(`I:\n ${himno[1]}`);
     break;
 
-    case '2' : console.log(himno[2]);
+    case '2' : console.log(`II:\n ${himno[2]}`);
     break;
     
-    case '3' : console.log(himno[3]);
+    case '3' : console.log(`III:\n ${himno[3]}`);
     break;
 
-    case '4' : console.log(himno[4]);
+    case '4' : console.log(`IV:\n ${himno[4]}`);
     break;
 
-    case '5' : console.log(himno[5]);
+    case '5' : console.log(`V:\n ${himno[5]}`);
     break;
 
-    case '6' : console.log(himno[6]);
+    case '6' : console.log(`VI:\n ${himno[6]}`);
     break;
 
-    case '7' : console.log(himno[7]);
+    case '7' : console.log(`VII:\n ${himno[7]}`);
     break;
 
-    case '8' : console.log(himno[8]);
+    case '8' : console.log(`VIII:\n ${himno[8]}`);
     break;
 
-    case '9' : console.log(himno[9]);
+    case '9' : console.log(`IX:\n ${himno[9]}`);
     break;
 
-    case '10' : console.log(himno[10]);
+    case '10' : console.log(`X:\n ${himno[10]}`);
     break;
 
-    case '11' : console.log(himno[11]);
+    case '11' : console.log(`XI:\n ${himno[11]}`);
     break;
 
     default: console.log('Valor no valido.')

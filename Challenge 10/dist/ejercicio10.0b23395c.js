@@ -127,51 +127,51 @@ switch (pregunta) {
     break;
 
   case 'coro':
-    console.log(himno[0]);
+    console.log("Coro:\n ".concat(himno[0]));
     break;
 
   case '1':
-    console.log(himno[1]);
+    console.log("I:\n ".concat(himno[1]));
     break;
 
   case '2':
-    console.log(himno[2]);
+    console.log("II:\n ".concat(himno[2]));
     break;
 
   case '3':
-    console.log(himno[3]);
+    console.log("III:\n ".concat(himno[3]));
     break;
 
   case '4':
-    console.log(himno[4]);
+    console.log("IV:\n ".concat(himno[4]));
     break;
 
   case '5':
-    console.log(himno[5]);
+    console.log("V:\n ".concat(himno[5]));
     break;
 
   case '6':
-    console.log(himno[6]);
+    console.log("VI:\n ".concat(himno[6]));
     break;
 
   case '7':
-    console.log(himno[7]);
+    console.log("VII:\n ".concat(himno[7]));
     break;
 
   case '8':
-    console.log(himno[8]);
+    console.log("VIII:\n ".concat(himno[8]));
     break;
 
   case '9':
-    console.log(himno[9]);
+    console.log("IX:\n ".concat(himno[9]));
     break;
 
   case '10':
-    console.log(himno[10]);
+    console.log("X:\n ".concat(himno[10]));
     break;
 
   case '11':
-    console.log(himno[11]);
+    console.log("XI:\n ".concat(himno[11]));
     break;
 
   default:
